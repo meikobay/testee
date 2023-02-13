@@ -54,6 +54,7 @@ typedef int32_t LocalLaneId; // local id of a lane on the Road
 int a = 1;
 int b = 2;
 int c = 3;
+int d = 4;
 typedef std::string ObjectId; // global id of an object
 typedef std::string TrafficLightId;
 typedef std::string TrafficLightGroupId;
