@@ -52,7 +52,7 @@ typedef int32_t RoadId;      // global id of a road
 typedef int32_t JunctionId;  // global id of a junction
 typedef int32_t LocalLaneId; // local id of a lane on the Road
 int a = 1;
-
+int c = 3;
 typedef std::string ObjectId; // global id of an object
 typedef std::string TrafficLightId;
 typedef std::string TrafficLightGroupId;
@@ -613,7 +613,7 @@ const AnchorArray EmptyAnchorArray = AnchorArray();
 const ObjectInRouteArray EmptyObjectInRouteArray = ObjectInRouteArray();
 
 //------------------------------------------------------ LaneChangePolicy type
-//function pointer---------------------
+// function pointer---------------------
 /**
  * @brief The decleration of the function pointer of the lane change policy
  *
@@ -888,12 +888,12 @@ public: // TODO:
   // ----------------------------------------------
 
   //**
-  //		* @brief get the heading angle of the lane at the given position on
-  //lane
+  //		* @brief get the heading angle of the lane at the given position
+  //on lane
   //		* @param id lane's global id
   //	    * @param pos the given point of the querying
   //	    * @param angle the angle between the lane's heading angle at pos and
-  //the east direction
+  // the east direction
   //		* @return ErrorCode: 0 success; otherwise error occurs;
   // */
   ErrorCode calc_road_heading_angle(const SLZ &pos, double &angle) const;
@@ -1185,7 +1185,7 @@ public: // TODO:
    * @param lane_id: The input lane global id
    * @param s: The querying position s
    * @param road_mark_pair: (left roadmark, right roadmark), roadmark value are
-   * written in string like  					 		 *
+   * written in string like *
    * "{$type} {$color}"
    * @return kOK:success, otherwise: failed
    */
