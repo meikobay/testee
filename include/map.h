@@ -53,7 +53,7 @@ typedef int32_t JunctionId;  // global id of a junction
 typedef int32_t LocalLaneId; // local id of a lane on the Road
 int a = 1;
 int b = 2;
-
+int c = 3;
 typedef std::string ObjectId; // global id of an object
 typedef std::string TrafficLightId;
 typedef std::string TrafficLightGroupId;
@@ -890,7 +890,7 @@ public: // TODO:
 
   //**
   //		* @brief get the heading angle of the lane at the given position
-  //on lane
+  // on lane
   //		* @param id lane's global id
   //	    * @param pos the given point of the querying
   //	    * @param angle the angle between the lane's heading angle at pos and
